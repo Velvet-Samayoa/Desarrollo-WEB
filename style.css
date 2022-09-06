@@ -1,81 +1,77 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  transition: all 0.25s;
 }
 
 body {
-    background: url('C:/Users/Home/Documents/TAREAS 2/OCTAVO SEMESTRE/Desarrollo WEB/lujo.jpg') no-repeat;
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display:flexbox;
+  justify-content:stretch;
+  align-items:flex-start;
+  background-color: black;
+  color: antiquewhite;
 }
 
-#tit1 {
-    background: rgba(255, 253, 200, 0.4);
-    font-family:'Times New Roman', Times, serif;
-    font-size: 50px;
-    text-align: center;
+#contenedor{
+  background-color: rgb(83, 211, 162);
+  box-shadow: inset 5px 5px 1px rgba(191, 219, 34, 0.3),
+    inset 5px 5px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+  width: 250px;
 }
 
-.box{
-    width: 500px;
-    background: rgba(0, 0, 0, .4);
-    margin: 0 auto;
-    margin-top: 4%;
-    padding: 50px;   
+#operacion {
+  background-color: rgb(228, 231, 189);
+  border-style: groove;
+  margin: 5px;
+  padding: 5px;
+  font-size: 150%;
+  height: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
-/*#l1{
-    background: rgba(0, 0, 100, .3);
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}*/
-
-#menu{
-    margin:auto;
-    width: 300px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.esp {
+  background-color: brown;
 }
 
-ul, ol{
-    list-style: none;
+.num {
+  background-color: rgb(117, 197, 109);
+  color: black;
+  font-family: 'Times New Roman';
+  font-style:oblique;
 }
 
-.l1 li a{
-    background-color: rgba(0, 0, 0, .5);
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
+.op {
+  background-color: rgb(139, 87, 122);
+  color: yellow;
+  font-family: 'Times New Roman';
 }
 
-.l1 > li{
-    float: left;
+.eq {
+  background-color: black;
+  color: orange;
 }
 
-.l1 li a:hover{
-    background-color: cadetblue;
+input[type="button"] {
+  width: 50px;
+  height: 50px;
+  border-block:  50%;
+  border: 0;
+  margin: 3px;
+  box-shadow: inset 3px 3px 1px rgba(98, 2, 136, 0.3),
+    inset -3px -3px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-.l1 li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
+input[type="button"]:hover {
+  box-shadow: inset 3px 3px 1px rgba(255, 255, 255, 0.3);
 }
 
-.l1 li:hover>ul{
-    display: block;
-}
-
-.l1 li ul li{
-    position: relative;
-}
-
-.l1 li ul li ul{
-    right: -140px;
-    top:0px;
-}
-
-#insta{
-    background-color: azure;
-    color: blue;
-    font-family: fantasy;
+input[type="button"]:active {
+  box-shadow: none;
 }
